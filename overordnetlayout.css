@@ -6,11 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-.wrapper {
-    max-width: 400px;
-/*størrelsen kan have noget at gøre med at man måske gerne ville rykke rundt på tingene hvis man havde en større skærm*/
-}
-
 .wrapper > * {
 /* > betyder elementer under der hvor der står wrapper og * betyder alle elementer*/
     border-radius: 0px;
@@ -132,7 +127,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 800px){
 
   .collage {
     max-width: 800px;
