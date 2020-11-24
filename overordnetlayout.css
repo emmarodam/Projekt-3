@@ -68,7 +68,7 @@ ul{
 
 a{
   font-family: serif;
-  color: #000000;
+  color: #FFFFFF;
   font-family: "avenir next", serif;
   display: inline-block;
   width: 50%;
@@ -148,9 +148,9 @@ a:hover {
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .collage {
-    max-width: 800px;
+    align-items: center;
     margin: auto;
     display: grid;
     grid-row-gap: 2px;
