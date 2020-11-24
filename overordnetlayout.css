@@ -97,50 +97,10 @@ a:hover {
     "billede7 billede8  billede9"
 }
 
-.billede1 {
+.billede {
   width: 200px;
   height: auto;
 }
-
-.billede2 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede3 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede4 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede5 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede6 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede7 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede8 {
-    width: 200px;
-    height: auto;
-  }
-
-.billede9 {
-    width: 200px;
-    height: auto;
-  }
 
 .footer {
   text-align: center;
@@ -148,12 +108,12 @@ a:hover {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   .collage {
     align-items: center;
     margin: auto;
     display: grid;
-    grid-row-gap: 2px;
+    grid-row-gap: 5px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "billede1"
@@ -164,5 +124,15 @@ a:hover {
       "billede6"
       "billede7"
       "billede8"
-      "billede9"
+      "billede9" }
+
+  .header {
+    text-align: center;
+  }
+
+  .billede {
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
 }
