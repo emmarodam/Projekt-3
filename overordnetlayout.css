@@ -1,5 +1,5 @@
 body {
-  background: #DBA8AC;
+  background: #ffffff;
 }
 
 *{
@@ -12,7 +12,7 @@ body {
     padding: 5px 0px 0px 5px;
 /* mellemrummet mellem tekst og padding*/
     font-family: serif;
-    color: white;
+    color: #373f51ff;
     font-family: "avenir next", serif;
 }
 
@@ -51,7 +51,7 @@ body {
   text-align: center;
   justify-content: space-between;
   height: auto;
-  background-color: #DBA8AC;
+  background-color: #ffffff;
   width: auto;
   padding: 0;
 }
@@ -63,7 +63,7 @@ ul{
 
 a{
   font-family: serif;
-  color: #FFFFFF;
+  color:#373f51ff;
   font-family: "avenir next", serif;
   display: inline-block;
   width: 50%;
@@ -72,8 +72,8 @@ a{
   text-decoration: none;
 }
 
-a:hover {
-  background-color: #F3CDE0;
+a:hover{
+  background-color: #bcd4deff;
 }
 
 .main {
@@ -133,7 +133,7 @@ a:hover {
     max-width: 800px;
     margin: auto;
     display: grid;
-    grid-row-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "billede1 billede2  billede3"
@@ -143,4 +143,5 @@ a:hover {
   .billede {
     width: 200px;
     height: auto;
-      }
+  }
+}
