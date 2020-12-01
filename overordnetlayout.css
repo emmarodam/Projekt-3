@@ -19,13 +19,28 @@ body {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 100%;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 0.5fr;
 /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
   grid-template-areas:
     "logo header some"
     "nav nav nav"
     "main main main"
     "footer footer footer";
+}
+
+.some {
+  grid-area: some;
+  align-items: right;
+}
+
+.iconcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  padding: 0;
+  color: #f3cde0;
 }
 
 .logo {
