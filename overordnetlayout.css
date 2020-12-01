@@ -30,7 +30,7 @@ body {
 
 .logo {
   grid-area: logo;
-  width: 30%;
+  width: 40%;
   height: auto;
   margin: auto;
   margin-left: 10%;
@@ -136,6 +136,10 @@ a:hover{
       "billede7 billede8"
       "billede9"
     }
+
+  .header {
+    font-size: 100%;
+    }
 }
 
 @media only screen and (min-width: 800px){
@@ -156,4 +160,8 @@ a:hover{
     width: 300px;
     height: auto;
   }
+
+  .header {
+    font-size: 110%;
+    }
 }
