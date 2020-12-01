@@ -73,6 +73,7 @@ body {
 
 .user{
   flex-grow: 0.25;
+  color: red;
 }
 
 .container{
@@ -93,7 +94,7 @@ ul{
 
 a {
   font-family: serif;
-  color:#373f51ff;
+  color:#000000;
   font-family: "avenir next", serif;
   display: inline-block;
   width: 50%;
@@ -104,7 +105,8 @@ a {
 
 a:hover{
   background-color: #bcd4deff;
-  border-radius: 40px;
+  border-radius: 35px;
+  width: auto;
 }
 
 .main {
