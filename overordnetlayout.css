@@ -30,7 +30,7 @@ body {
 
 .some {
   grid-area: some;
-  align-items: right;
+  align-items: center;
 }
 
 .iconcontainer {
@@ -42,14 +42,15 @@ body {
   width: 25%;
   margin-left: 10%;
   padding: 0px;
+  margin: 0px;
 }
 
 .logo {
   grid-area: logo;
   width: 40%;
   height: auto;
-  margin: auto;
   margin-left: 10%;
+  padding: 0px;
 }
 
 .header {
@@ -57,6 +58,8 @@ body {
   text-align: center;
   font-size: 50%;
   color: #000000;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav {
@@ -196,12 +199,14 @@ a:hover{
 
   .header {
     font-size: 110%;
+    padding-top: 6%;
     }
 
   .iconcontainer {
     height: auto;
     width: 50%;
     font-size: 175%;
-    margin-left: 35%;
+    margin-left: 40%;
+    margin-top: 7%;
       }
 }
