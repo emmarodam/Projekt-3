@@ -11,7 +11,6 @@ body {
     border-radius: 0px;
     padding: 5px 0px 0px 5px;
 /* mellemrummet mellem tekst og padding*/
-    font-family: serif;
     color: #373f51ff;
     font-family: "avenir next", serif;
 }
@@ -20,21 +19,33 @@ body {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 100%;
+  grid-template-columns: 3fr 1fr;
 /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
   grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
+    "header some"
+    "nav nav"
+    "main main"
+    "footer footer";
 }
 
 .header {
   grid-area: header;
-  text-align: center;
+}
+
+.some {
+  grid-area: some;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
 }
 
 .nav {
   grid-area: nav;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .item{
@@ -74,6 +85,7 @@ a{
 
 a:hover{
   background-color: #bcd4deff;
+  border-radius: 40px;
 }
 
 .main {
@@ -123,14 +135,15 @@ a:hover{
       "billede9" }
 
   .header {
-    text-align: center;
+    text-align: left;
   }
 }
 
-@media only screen and (min-width: 800px){
+@media (min-width: 800px){
 
   .collage {
-    max-width: 800px;
+    max-width: 900px;
+    justify-content: center;
     margin: auto;
     display: grid;
     grid-gap: 20px;
@@ -141,7 +154,7 @@ a:hover{
       "billede7 billede8  billede9"}
 
   .billede {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 }
