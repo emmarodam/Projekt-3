@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 100%;
-  grid-template-columns: 1fr 2fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
 /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
   grid-template-areas:
     "logo header some"
@@ -36,11 +36,12 @@ body {
 .iconcontainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: right;
   height: auto;
-  width: auto;
-  padding: 0;
-  color: #f3cde0;
+  width: 25%;
+  margin-left: 10%;
+  padding: 0px;
 }
 
 .logo {
@@ -55,6 +56,7 @@ body {
   grid-area: header;
   text-align: center;
   font-size: 50%;
+  color: #000000;
 }
 
 .nav {
@@ -89,7 +91,7 @@ ul{
   align-items: center;
 }
 
-a{
+a {
   font-family: serif;
   color:#373f51ff;
   font-family: "avenir next", serif;
@@ -161,6 +163,14 @@ a:hover{
   .header {
     font-size: 100%;
     }
+
+  .iconcontainer {
+    height: auto;
+    width: 50%;
+    font-size: 125%;
+    margin-left: 25%;
+    }
+
 }
 
 @media only screen and (min-width: 800px){
@@ -185,4 +195,11 @@ a:hover{
   .header {
     font-size: 110%;
     }
+
+  .iconcontainer {
+    height: auto;
+    width: 50%;
+    font-size: 175%;
+    margin-left: 35%;
+      }
 }
