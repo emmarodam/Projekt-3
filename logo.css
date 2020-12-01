@@ -1,0 +1,12 @@
+.sprite {
+  width: 500px;
+  height: 500px;
+  background: url('logo.png') 0 0 no-repeat;
+  /* 0 0 repeat betyder bare at den starter i øverste højre hjørne og no-repeat betyder at den ikke skal fylde hele skærmen ud*/
+  animation: play 1s steps(6) infinite;
+}
+
+@keyframes play {
+  0% {background-position: 0px;}
+  100% {background-position: -3000px;}
+}

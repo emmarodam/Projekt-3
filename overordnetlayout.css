@@ -19,25 +19,27 @@ body {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 100%;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
   grid-template-areas:
-    "header some"
-    "nav nav"
-    "main main"
-    "footer footer";
+    "logo header some"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.logo {
+  grid-area: logo;
+  width: 30%;
+  height: auto;
+  margin: auto;
+  margin-left: 10%;
 }
 
 .header {
   grid-area: header;
-}
-
-.some {
-  grid-area: some;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: auto;
+  text-align: center;
+  font-size: 50%;
 }
 
 .nav {
@@ -120,7 +122,7 @@ a:hover{
   font-size: 10px;
 }
 
-@media (min-width: 400px) {
+@media only screen and (min-width: 400px){
   .collage {
     align-items: center;
     margin: auto;
@@ -132,15 +134,11 @@ a:hover{
       "billede3 billede4"
       "billede5 billede6"
       "billede7 billede8"
-      "billede9" }
-
-  .header {
-    text-align: left;
-  }
+      "billede9"
+    }
 }
 
-@media (min-width: 800px){
-
+@media only screen and (min-width: 800px){
   .collage {
     max-width: 900px;
     justify-content: center;
@@ -151,7 +149,8 @@ a:hover{
     grid-template-areas:
       "billede1 billede2  billede3"
       "billede4 billede5  billede6"
-      "billede7 billede8  billede9"}
+      "billede7 billede8  billede9"
+    }
 
   .billede {
     width: 300px;
