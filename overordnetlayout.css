@@ -99,12 +99,6 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  background-color: #f3cde0;
-  border-radius: 35px;
-  width: auto;
-}
-
 .main {
   grid-area: main;
 }
@@ -164,6 +158,7 @@ a:hover{
 
   .dropdown:hover .indhold {
     display: block;
+    color: #f3cde0;
   }
 
   .indhold {
@@ -177,7 +172,8 @@ a:hover{
   }
 
   .indhold a:hover {
-    color: #000000;
+    background-color: #f3cde0;
+    width: 100%;
     }
   }
   /*ipad*/
@@ -207,6 +203,12 @@ a:hover{
       "billede5 billede6"
       "billede7 billede8"
       "billede9"
+    }
+
+  a:hover{
+    background-color: #f3cde0;
+    border-radius: 35px;
+    width: auto;
     }
 
   .header {
