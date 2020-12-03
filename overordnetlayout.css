@@ -9,8 +9,6 @@ body {
 .wrapper > * {
 /* > betyder elementer under der hvor der står wrapper og * betyder alle elementer*/
     border-radius: 0px;
-    padding: 5px 0px 0px 5px;
-/* mellemrummet mellem tekst og padding*/
     font-family: "avenir next", "verdana", sans-serif;
 }
 
@@ -131,10 +129,11 @@ a {
   font-size: 10px;
 }
 
-#mig {
+.mig {
   padding: 0px;
   width: 85%;
-  margin: 0% 10% 0% 10%;
+  justify-content: center;
+  margin-left: 7.5%;
   }
 
 .section1 {
@@ -143,7 +142,7 @@ a {
   font-size: 10px;
   width: 85%;
   padding: 10px;
-  margin: 7%;
+  margin: 7.5%;
 }
 
 .section2 {
@@ -152,7 +151,7 @@ a {
   font-size: 10px;
   width: 85%;
   padding: 10px;
-  margin: 7%;
+  margin: 7.5%;
 }
 
 .section3 {
@@ -162,7 +161,7 @@ a {
   width: 85%;
   margin-top: 20px;
   padding: 10px;
-  margin: 7%;
+  margin: 7.5%;
 }
 
 
@@ -173,7 +172,7 @@ a {
     display: none;
   }
 
-  /*burgermenu til mobilen*/
+/*burgermenu til mobilen*/
   .mobilknap {
     color: black;
     background-color: #ffffff;
@@ -212,7 +211,7 @@ a {
     }
   }
 
-  /*ipad*/
+/*ipad*/
 @media only screen and (min-width: 400px){
   .wrapper {
     display: grid;
@@ -261,9 +260,47 @@ a {
   .dropdown {
       display: none;
     }
+
+  .mig {
+      padding: 0px;
+      width: 40%;
+      margin-left: 20px;
+      margin-right: 0px;
+      float: left;
+      }
+
+  .section1 {
+      background-color: #bcd4deff;
+      border-radius: 35px;
+      font-size: 15px;
+      width: 40%;
+      padding: 10px;
+      float: right;
+      margin-top: 10px;
+    }
+
+  .section2 {
+      background-color: #7d938a;
+      border-radius: 35px;
+      font-size: 15px;
+      width: 40%;
+      padding: 10px;
+      float: right;
+      margin-top: 0px;
+    }
+
+  .section3 {
+      background-color: #f3cde0;
+      border-radius: 35px;
+      font-size: 15px;
+      width: 85%;
+      padding: 10px;
+      margin-top: 0px;
+      clear: both;
+    }
 }
 
-  /*computer*/
+/*computer*/
 @media only screen and (min-width: 800px){
   .wrapper {
     display: grid;
