@@ -1,0 +1,53 @@
+
+        <div class="mobilnav">
+          <a href="#" class="active"><i class="fa fa-bars"></i></a>
+          <div class="skjultelinks">
+            <a href="#">Home</a></li>
+            <a href="#">About me</a></li>
+            <a href="https://portfolio.emmarodam.dk" target="_blank">Procesportfolio</a></li>
+            <a href="#">Contact</a></li>
+          </div>
+        </div>
+
+
+
+.mobilnav {
+  overflow: hidden;
+/*for at man ikke kan se den hele tiden*/
+  background-color: #f3cde0;
+  position: relative;
+}
+
+.skjultelinks {
+  display: none;
+}
+
+.mobilnav a {
+  font-family: serif;
+  color:#000000;
+  font-family: "avenir next", "verdana", serif;
+  display: inline-block;
+  width: 50%;
+  padding: 20px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobilnav a.icon {
+  right: 0;
+  top: 0;
+/*ikonets placering på siden*/
+  background: #f3cde0
+  display: inline-block;
+  position: absolute;
+}
+
+.mobilnav a:hover {
+  background-color: #f3cde0;
+  width: 10%;
+  }
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}

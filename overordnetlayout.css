@@ -11,8 +11,7 @@ body {
     border-radius: 0px;
     padding: 5px 0px 0px 5px;
 /* mellemrummet mellem tekst og padding*/
-    color: #373f51ff;
-    font-family: "avenir next", serif;
+    font-family: "avenir next", "verdana", sans-serif;
 }
 
 .wrapper {
@@ -22,26 +21,22 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
   grid-template-areas:
-    "logo header some"
-    "nav nav nav"
+    "logo header nav"
+    "some some some"
     "main main main"
     "footer footer footer";
 }
 
 .some {
   grid-area: some;
-  align-items: center;
+  justify-content: center;
 }
 
 .iconcontainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: right;
-  height: auto;
-  width: 25%;
-  margin: 0px;
-  padding: 0px;
+  justify-content: center;
+  margin: 0;
 }
 
 .logo {
@@ -75,7 +70,6 @@ body {
 
 .user{
   flex-grow: 0.25;
-  color: red;
 }
 
 .navigation{
@@ -97,7 +91,7 @@ ul{
 a {
   font-family: serif;
   color:#000000;
-  font-family: "avenir next", serif;
+  font-family: "avenir next", "verdana", serif;
   display: inline-block;
   width: 50%;
   padding: 20px 5px;
@@ -117,7 +111,7 @@ a:hover{
 
 .collage {
   align-items: center;
-  margin: 20px;
+  margin: 0px 20px 0px 20px;
   display: grid;
   grid-row-gap: 5px;
   grid-template-columns: 1fr;
@@ -143,13 +137,64 @@ a:hover{
   font-size: 10px;
 }
 
+
+/*indstillinger til de forskellige skærme*/
 @media only screen and (max-width: 400px){
   .hide-on-mobile {
     display: none;
   }
-}
 
+  /*burgermenu til mobilen*/
+  .mobilknap {
+    color: black;
+    background-color: #ffffff;
+    padding: 10px;
+    border: none;
+    margin-left: 70px;
+  }
+
+  .dropdown:hover .mobilknap {
+    background: #f3cde0;
+    }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown:hover .indhold {
+    display: block;
+  }
+
+  .indhold {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+  /*handler om lag*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 10px;
+  }
+
+  .indhold a:hover {
+    color: #000000;
+    }
+  }
+  /*ipad*/
 @media only screen and (min-width: 400px){
+  .wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
+    grid-template-areas:
+      "logo header some"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+  }
+
   .collage {
     align-items: center;
     margin: auto;
@@ -175,9 +220,25 @@ a:hover{
     margin-left: 37%;
     }
 
+  .dropdown {
+      display: none;
+    }
 }
-
+  /*computer*/
 @media only screen and (min-width: 800px){
+  .wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  /* fr (fraktion, dele af skærmen) er enhederne der bliver brugt til at definere målene i grid*/
+    grid-template-areas:
+      "logo header some"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+  }
+
   .collage {
     max-width: 900px;
     justify-content: center;
