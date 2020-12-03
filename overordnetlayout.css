@@ -121,7 +121,7 @@ a {
     "billede9" }
 
 .billede {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
 }
@@ -130,6 +130,41 @@ a {
   text-align: center;
   font-size: 10px;
 }
+
+#mig {
+  padding: 0px;
+  width: 100%;
+  margin: 0% 10% 0% 10%;
+  }
+
+.section1 {
+  background-color: #bcd4deff;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 500px;
+  padding: 10px;
+  margin: 7%;
+}
+
+.section2 {
+  background-color: #7d938a;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 85%;
+  padding: 10px;
+  margin: 7%;
+}
+
+.section3 {
+  background-color: #f3cde0;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 85%;
+  margin-top: 20px;
+  padding: 10px;
+  margin: 7%;
+}
+
 
 
 /*indstillinger til de forskellige skærme*/
@@ -176,6 +211,7 @@ a {
     width: 100%;
     }
   }
+
   /*ipad*/
 @media only screen and (min-width: 400px){
   .wrapper {
@@ -226,6 +262,43 @@ a {
       display: none;
     }
 }
+#mig {
+  padding: 0px;
+  width: 40%;
+  margin: 20px;
+  float: left;
+  }
+
+.section1 {
+  background-color: #bcd4deff;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 40%;
+  padding: 10px;
+  float: right;
+}
+
+.section2 {
+  background-color: #7d938a;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 40%;
+  padding: 10px;
+  margin: 7%;
+  float: right;
+}
+
+.section3 {
+  background-color: #f3cde0;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px;
+  margin: 7%;
+  float: right;
+}
+
   /*computer*/
 @media only screen and (min-width: 800px){
   .wrapper {
