@@ -130,11 +130,10 @@ a {
   font-size: 10px;
 }
 
-.mig {
-  padding: 0px;
-  width: 85%;
-  margin-left: 7.5%;
-  }
+.illustrationer {
+  width: 15%;
+  margin-left: 42.5%;%;
+}
 
 .section1 {
   background-color: #bcd4deff;
@@ -168,10 +167,6 @@ a {
 
 /*indstillinger til de forskellige skærme*/
 @media only screen and (max-width: 400px){
-  .illustrationer {
-    display: none;
-  }
-
   .hide-on-mobile {
     display: none;
   }
@@ -265,13 +260,7 @@ a {
       display: none;
     }
 
-  .mig {
-      padding: 0px;
-      width: 60%;
-      margin-left: 20%;
-      }
-
-.grafikcontainer {
+  /*.grafikcontainer {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -280,36 +269,43 @@ a {
     height: auto;
     padding: 0;
     margin-left: 10%;
-}
+    }*/
 
-.illustrationer  {
-    width: 15%;
+  .illustrationer  {
+    width: 10%;
     height: auto;
-}
+    margin-left: 45%;
+    }
 
-.seccontainer {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  padding: 5%;
-}
+  /*.seccontainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    }*/
 
   .section1 {
       background-color: #bcd4deff;
       border-radius: 35px;
+      width: 65%;
+      margin: 0% 17.5% 5% 17.5%;
     }
 
   .section2 {
       background-color: #7d938a;
       border-radius: 35px;
+      width: 65%;
+      margin: 0% 17.5% 5% 17.5%;
     }
 
   .section3 {
       background-color: #f3cde0;
       border-radius: 35px;
+      width: 65%;
+      margin: 0% 17.5% 5% 17.5%;
     }
 }
 
@@ -355,40 +351,11 @@ a {
     height: auto;
     width: 50%;
     font-size: 175%;
-    margin-left: 45ss%;
+    margin-left: 45%;
     margin-top: 7%;
-      }
+    }
 
-  .mig {
-    padding: 0px;
-    width: 60%;
-    margin-left: 20%;
-      }
-
-  .section1 {
-    background-color: #bcd4deff;
-    border-radius: 35px;
-    font-size: 15px;
-    width: 40%;
-    padding: 10px;
-    margin-top: 10px;
-      }
-
-  .section2 {
-    background-color: #7d938a;
-    border-radius: 35px;
-    font-size: 15px;
-    width: 40%;
-    padding: 10px;
-    margin-top: 0px;
-      }
-
-  .section3 {
-    background-color: #f3cde0;
-    border-radius: 35px;
-    font-size: 15px;
-    width: 85%;
-    padding: 10px;
-    margin-top: 0px;
-      }
+  p {
+    font-size: 120%;
+  }
 }
