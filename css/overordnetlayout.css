@@ -11,6 +11,7 @@ body {
     font-family: "avenir next", "verdana", sans-serif;
 }
 
+/*mobilefirst*/
 .wrapper {
   display: grid;
   grid-gap: 5px;
@@ -175,7 +176,7 @@ p {
 .mig {
   width: 85%;
   margin: 0% 7.5% 7.5% 7.5%;
-  }
+}
 
 .contactsection1 {
   background-color: #bcd4de;
@@ -184,7 +185,7 @@ p {
   width: 85%;
   padding: 5%;
   margin: 7.5%;
-  }
+}
 
 .contactsection2 {
   background-color: #7d938a;
@@ -193,12 +194,12 @@ p {
   width: 85%;
   padding: 5%;
   margin: 7.5%;
-  }
+}
 
 .illustrationer2 {
   width: 15%;
   margin-left: 42.5%;
-  }
+}
 
 /*indstillinger til de forskellige skærme*/
 @media only screen and (max-width: 400px){
@@ -217,7 +218,7 @@ p {
 
   .dropdown:hover .mobilknap {
     background: #f3cde0;
-    }
+  }
 
   .dropdown {
     display: inline-block;
@@ -243,7 +244,7 @@ p {
     background-color: #f3cde0;
     width: 100%;
     }
-  }
+}
 
 /*ipad*/
 @media only screen and (min-width: 400px){
@@ -272,35 +273,36 @@ p {
       "billede5 billede6"
       "billede7 billede8"
       "billede9"
-    }
+  }
 
   a:hover{
     background-color: #f3cde0;
     border-radius: 35px;
     width: auto;
-    }
+  }
 
   .header {
     font-size: 100%;
-    }
+  }
 
   .iconcontainer {
     height: auto;
     width: 50%;
     font-size: 150%;
     margin-left: 37%;
-    }
+  }
 
   .dropdown {
       display: none;
-    }
+  }
 
 /*about me*/
   .illustrationer  {
     width: 10%;
     height: auto;
     margin-left: 45%;
-    }
+    float: none;
+  }
 
   .section1 {
       background-color: #bcd4deff;
@@ -309,7 +311,7 @@ p {
       padding: 5%;
       margin: 0% 17.5% 5% 17.5%;
       font-size: 80%;
-    }
+  }
 
   .section2 {
       background-color: #7d938a;
@@ -317,7 +319,7 @@ p {
       width: 65%;
       margin: 0% 17.5% 5% 17.5%;
       font-size: 80%;
-    }
+  }
 
   .section3 {
       background-color: #f3cde0;
@@ -325,10 +327,10 @@ p {
       width: 65%;
       margin: 0% 17.5% 5% 17.5%;
       font-size: 80%;
-    }
+  }
 
  /*contact*/
-  .main {
+  .contact {
     align-items: center;
     margin: auto;
     width: 85%;
@@ -378,17 +380,16 @@ p {
   }
 
   .collage {
-    max-width: 900px;
     justify-content: center;
-    margin: auto;
+    margin-left: 7.5%;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 2%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "billede1 billede2  billede3"
       "billede4 billede5  billede6"
       "billede7 billede8  billede9"
-    }
+  }
 
   .billede {
     width: 300px;
@@ -398,7 +399,7 @@ p {
   .header {
     font-size: 110%;
     padding-top: 6%;
-    }
+  }
 
   .iconcontainer {
     height: auto;
@@ -406,7 +407,7 @@ p {
     font-size: 175%;
     margin-left: 45%;
     margin-top: 7%;
-    }
+  }
 
   .section1 {
     font-size: 100%;
