@@ -8,13 +8,11 @@ body {
 
 .wrapper > * {
 /* > betyder elementer under der hvor der står wrapper og * betyder alle elementer*/
-    border-radius: 0%;
     font-family: "avenir next", "verdana", sans-serif;
 }
 
 .wrapper {
   display: grid;
-  height: 100vh;
   grid-gap: 5px;
   grid-template-columns: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -130,17 +128,19 @@ a {
   font-size: 10px;
 }
 
+/*about me*/
 .illustrationer {
   width: 15%;
-  margin-left: 42.5%;%;
+  margin-left: 42.5%;
 }
 
+
 .section1 {
-  background-color: #bcd4deff;
+  background-color: #bcd4de;
   border-radius: 35px;
   font-size: 10px;
   width: 85%;
-  padding: 10px;
+  padding: 5%;
   margin: 7.5%;
 }
 
@@ -149,7 +149,7 @@ a {
   border-radius: 35px;
   font-size: 10px;
   width: 85%;
-  padding: 10px;
+  padding: 5%;
   margin: 7.5%;
 }
 
@@ -158,12 +158,47 @@ a {
   border-radius: 35px;
   font-size: 10px;
   width: 85%;
-  margin-top: 20px;
-  padding: 10px;
+  padding: 5%;
   margin: 7.5%;
 }
 
+.contact {
+  width: 60%;
+  margin-left: 20%;
+}
 
+p {
+  font-family: "avenir next", "verdana", sans-serif;
+}
+
+/*contact*/
+.mig {
+  width: 85%;
+  margin: 0% 7.5% 7.5% 7.5%;
+  }
+
+.contactsection1 {
+  background-color: #bcd4de;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 85%;
+  padding: 5%;
+  margin: 7.5%;
+  }
+
+.contactsection2 {
+  background-color: #7d938a;
+  border-radius: 35px;
+  font-size: 10px;
+  width: 85%;
+  padding: 5%;
+  margin: 7.5%;
+  }
+
+.illustrationer2 {
+  width: 15%;
+  margin-left: 42.5%;
+  }
 
 /*indstillinger til de forskellige skærme*/
 @media only screen and (max-width: 400px){
@@ -260,38 +295,20 @@ a {
       display: none;
     }
 
-  /*.grafikcontainer {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    width: 80%;
-    height: auto;
-    padding: 0;
-    margin-left: 10%;
-    }*/
-
+/*about me*/
   .illustrationer  {
     width: 10%;
     height: auto;
     margin-left: 45%;
     }
 
-  /*.seccontainer {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    padding: 5%;
-    }*/
-
   .section1 {
       background-color: #bcd4deff;
       border-radius: 35px;
       width: 65%;
+      padding: 5%;
       margin: 0% 17.5% 5% 17.5%;
+      font-size: 80%;
     }
 
   .section2 {
@@ -299,6 +316,7 @@ a {
       border-radius: 35px;
       width: 65%;
       margin: 0% 17.5% 5% 17.5%;
+      font-size: 80%;
     }
 
   .section3 {
@@ -306,8 +324,43 @@ a {
       border-radius: 35px;
       width: 65%;
       margin: 0% 17.5% 5% 17.5%;
+      font-size: 80%;
     }
+
+ /*contact*/
+  .main {
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mig mail"
+    "mig contactsection1"
+    "mig mobil"
+    "mig contactsection2"
+  }
+
+  .contactsection1 {
+    grid-area: contactsection1;
+    font-size: 100%;
+  }
+
+  .contactsection2 {
+    grid-area: contactsection2;
+    font-size: 100%;
+  }
+
+  .mig {
+    grid-area: mig;
+  }
+
+  .illustrationer2 {
+    width: 20%;
+  }
 }
+
 
 /*computer*/
 @media only screen and (min-width: 800px){
@@ -355,7 +408,15 @@ a {
     margin-top: 7%;
     }
 
-  p {
-    font-size: 120%;
+  .section1 {
+    font-size: 100%;
+  }
+
+  .section2 {
+    font-size: 100%;
+  }
+
+  .section3 {
+    font-size: 100%;
   }
 }
