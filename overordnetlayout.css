@@ -8,12 +8,13 @@ body {
 
 .wrapper > * {
 /* > betyder elementer under der hvor der står wrapper og * betyder alle elementer*/
-    border-radius: 0px;
+    border-radius: 0%;
     font-family: "avenir next", "verdana", sans-serif;
 }
 
 .wrapper {
   display: grid;
+  height: 100vh;
   grid-gap: 5px;
   grid-template-columns: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -132,7 +133,6 @@ a {
 .mig {
   padding: 0px;
   width: 85%;
-  justify-content: center;
   margin-left: 7.5%;
   }
 
@@ -168,6 +168,10 @@ a {
 
 /*indstillinger til de forskellige skærme*/
 @media only screen and (max-width: 400px){
+  .illustrationer {
+    display: none;
+  }
+
   .hide-on-mobile {
     display: none;
   }
@@ -263,40 +267,49 @@ a {
 
   .mig {
       padding: 0px;
-      width: 40%;
-      margin-left: 20px;
-      margin-right: 0px;
-      float: left;
+      width: 60%;
+      margin-left: 20%;
       }
+
+.grafikcontainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    padding: 0;
+    margin-left: 10%;
+}
+
+.illustrationer  {
+    width: 15%;
+    height: auto;
+}
+
+.seccontainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+}
 
   .section1 {
       background-color: #bcd4deff;
       border-radius: 35px;
-      font-size: 15px;
-      width: 40%;
-      padding: 10px;
-      float: right;
-      margin-top: 10px;
     }
 
   .section2 {
       background-color: #7d938a;
       border-radius: 35px;
-      font-size: 15px;
-      width: 40%;
-      padding: 10px;
-      float: right;
-      margin-top: 0px;
     }
 
   .section3 {
       background-color: #f3cde0;
       border-radius: 35px;
-      font-size: 15px;
-      width: 85%;
-      padding: 10px;
-      margin-top: 0px;
-      clear: both;
     }
 }
 
@@ -344,5 +357,38 @@ a {
     font-size: 175%;
     margin-left: 45ss%;
     margin-top: 7%;
+      }
+
+  .mig {
+    padding: 0px;
+    width: 60%;
+    margin-left: 20%;
+      }
+
+  .section1 {
+    background-color: #bcd4deff;
+    border-radius: 35px;
+    font-size: 15px;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+      }
+
+  .section2 {
+    background-color: #7d938a;
+    border-radius: 35px;
+    font-size: 15px;
+    width: 40%;
+    padding: 10px;
+    margin-top: 0px;
+      }
+
+  .section3 {
+    background-color: #f3cde0;
+    border-radius: 35px;
+    font-size: 15px;
+    width: 85%;
+    padding: 10px;
+    margin-top: 0px;
       }
 }
