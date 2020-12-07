@@ -263,9 +263,10 @@ p {
 
   .collage {
     align-items: center;
-    margin: auto;
+    width: 85%;
+    margin: 0% 7.5% 0% 7.5%;
     display: grid;
-    grid-row-gap: 5px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "billede1 billede2"
@@ -381,9 +382,10 @@ p {
 
   .collage {
     justify-content: center;
-    margin-left: 7.5%;
     display: grid;
+    width: 85%;
     grid-gap: 2%;
+    margin: 0% 7.5% 0% 7.5%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "billede1 billede2  billede3"
