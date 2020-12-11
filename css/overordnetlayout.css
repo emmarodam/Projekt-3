@@ -21,8 +21,7 @@ body {
   grid-template-areas:
     "logo header nav"
     "some some some"
-    "main main main"
-    "footer footer footer";
+    "main main main";
 }
 
 .some {
@@ -58,9 +57,6 @@ body {
   grid-area: nav;
 }
 
-.footer {
-  grid-area: footer;
-}
 
 .item{
   flex-grow: 1;
@@ -97,36 +93,35 @@ a {
   text-decoration: none;
 }
 
+
+
+/*index*/
 .main {
   grid-area: main;
-}
-
-.collage {
-  align-items: center;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 7.5% 0px 7.5%;
+  width: 85%;
   display: grid;
-  grid-row-gap: 5px;
+  grid-row-gap: 2%;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "billede1"
-    "billede2"
-    "billede3"
-    "billede4"
-    "billede5"
-    "billede6"
-    "billede7"
-    "billede8"
-    "billede9" }
+  "mockup"
+  "forside1"
+  "kom1"
+  "ideer"
+  "forside2"
+  "kom2";
+}
 
-.billede {
+.gif {
   width: 100%;
   height: auto;
   margin: auto;
 }
 
-.footer {
-  text-align: center;
-  font-size: 10px;
+.billede {
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 /*about me*/
@@ -170,13 +165,13 @@ a {
 
 p {
   font-family: "avenir next", "verdana", sans-serif;
+  padding: 2%;;
 }
 
 /*contact*/
-.info {
+.overskrift {
   text-align: center
-  border-radius: 35px;
-  font-size: 10px;;
+  font-size: 10px;
   width: 100%;
   padding: 7%;
   margin: auto;
@@ -208,13 +203,19 @@ p {
   margin-left: 42.5%;
 }
 
-.iconscontact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  align-items: center;
-  font-size: 100%;;
+.overskrift {
+  text-align: center;
+  font-size: 80%;;
+}
+
+.button {
+  background-color: #f3cde0;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 35px;
+  font-size: 10px;
+  width: auto;
+  margin: 7.5%;
 }
 
 /*indstillinger til de forskellige skærme*/
@@ -277,21 +278,6 @@ p {
       "footer footer footer";
   }
 
-  .collage {
-    align-items: center;
-    width: 85%;
-    margin: 0% 7.5% 0% 7.5%;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "billede1 billede2"
-      "billede3 billede4"
-      "billede5 billede6"
-      "billede7 billede8"
-      "billede9"
-  }
-
   a:hover{
     background-color: #f3cde0;
     border-radius: 35px;
@@ -318,7 +304,6 @@ p {
     width: 10%;
     height: auto;
     margin-left: 45%;
-    float: none;
   }
 
   .section1 {
@@ -355,14 +340,13 @@ p {
     grid-row-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "info mobi mail"
-    "info contactsection1 contactsection2"
+    "overskrift overskrift overskrift"
+    "mig mail mobil"
+    "mig contactsection1 contactsection2"
   }
 
-  .info {
-    grid-area: info;
-    font-size: 100%;
-    padding: 5%;
+  .overskrift {
+    grid-area: overskrift;
     text-align: center;
   }
 
@@ -381,7 +365,7 @@ p {
   }
 
   .illustrationer2 {
-    width: 30%;
+    width: 10%;
   }
 }
 
@@ -401,22 +385,35 @@ p {
       "footer footer footer";
   }
 
-  .collage {
-    justify-content: center;
-    display: grid;
-    width: 85%;
-    grid-gap: 2%;
-    margin: 0% 7.5% 0% 7.5%;
-    grid-template-columns: 1fr 1fr 1fr;
+/*index*/
+  .main {
+    grid-row-gap: 2%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "billede1 billede2  billede3"
-      "billede4 billede5  billede6"
-      "billede7 billede8  billede9"
+    "mockup forside1"
+    "mockup kom1"
+    "forside2 ideer"
+    "kom2 ideer";
   }
 
-  .billede {
-    width: 300px;
-    height: auto;
+  #mockup {
+    grid-area: mockup;
+  }
+
+  #ideer {
+    grid-area: ideer;
+  }
+
+  .kom1 {
+    grid-area: kom1;
+  }
+
+  .kom2 {
+    grid-area: kom2;
+  }
+
+  .gif {
+    width: 60%;
   }
 
   .header {
@@ -432,6 +429,7 @@ p {
     margin-top: 7%;
   }
 
+/*about me*/
   .section1 {
     font-size: 100%;
   }
