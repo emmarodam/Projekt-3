@@ -93,38 +93,34 @@ a {
   text-decoration: none;
 }
 
-
-
 /*index*/
-.main {
+.forside {
   grid-area: main;
-  margin: 0px 7.5% 0px 7.5%;
+  display: flex;
+  flex-direction: column;
   width: 85%;
-  display: grid;
-  grid-row-gap: 2%;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "mockup"
-  "forside1"
-  "kom1"
-  "ideer"
-  "forside2"
-  "kom2";
+  margin-left: 7.5%;;
 }
 
 .gif {
   width: 100%;
   height: auto;
   margin: auto;
+  padding: 2%;
 }
 
 .billede {
   width: 100%;
   height: auto;
   margin: auto;
+  border-radius: 20px;
 }
 
 /*about me*/
+.aboutme {
+  grid-area: main;
+}
+
 .illustrationer {
   width: 15%;
   margin-left: 42.5%;
@@ -158,11 +154,6 @@ a {
   margin: 7.5%;
 }
 
-.contact {
-  width: 60%;
-  margin-left: 20%;
-}
-
 p {
   font-family: "avenir next", "verdana", sans-serif;
   padding: 2%;;
@@ -176,6 +167,12 @@ p {
   padding: 7%;
   margin: auto;
   margin-bottom: 10%;
+}
+
+.contact {
+  grid-area: main;
+  width: 60%;
+  margin-left: 20%;
 }
 
 .contactsection1 {
@@ -299,11 +296,44 @@ p {
       display: none;
   }
 
+/*index*/
+  .forside {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mockup forside1"
+    "mockup kom1"
+    "forside2 ideer"
+    "kom2 ideer";
+  }
+
+  #mockup {
+    grid-area: mockup;
+  }
+
+  #ideer {
+    grid-area: ideer;
+  }
+
+  .kom1 {
+    grid-area: kom1;
+  }
+
+  .kom2 {
+    grid-area: kom2;
+  }
+
+  .gif {
+    width: 60%;
+  }
+
 /*about me*/
   .illustrationer  {
-    width: 10%;
+    width: 20%;
     height: auto;
-    margin-left: 45%;
+    margin-left: 40%;
+    margin-bottom: 5%;
   }
 
   .section1 {
@@ -385,37 +415,6 @@ p {
       "footer footer footer";
   }
 
-/*index*/
-  .main {
-    grid-row-gap: 2%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "mockup forside1"
-    "mockup kom1"
-    "forside2 ideer"
-    "kom2 ideer";
-  }
-
-  #mockup {
-    grid-area: mockup;
-  }
-
-  #ideer {
-    grid-area: ideer;
-  }
-
-  .kom1 {
-    grid-area: kom1;
-  }
-
-  .kom2 {
-    grid-area: kom2;
-  }
-
-  .gif {
-    width: 60%;
-  }
-
   .header {
     font-size: 110%;
     padding-top: 6%;
@@ -428,6 +427,7 @@ p {
     margin-left: 45%;
     margin-top: 7%;
   }
+
 
 /*about me*/
   .section1 {
