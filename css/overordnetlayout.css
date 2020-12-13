@@ -99,7 +99,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 85%;
-  margin-left: 7.5%;;
+  margin-left: 7.5%;
 }
 
 .gif {
@@ -202,7 +202,7 @@ p {
 
 .overskrift {
   text-align: center;
-  font-size: 80%;;
+  font-size: 80%;
 }
 
 .button {
@@ -213,6 +213,18 @@ p {
   font-size: 10px;
   width: auto;
   margin: 7.5%;
+}
+
+.preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.eks {
+  padding: 2%;
+  width: 45%;
+  border-radius: 20px;
 }
 
 /*indstillinger til de forskellige skærme*/
@@ -337,28 +349,28 @@ p {
   }
 
   .section1 {
-      background-color: #bdd4dd;
-      border-radius: 35px;
-      width: 65%;
-      padding: 5%;
-      margin: 0% 17.5% 5% 17.5%;
-      font-size: 80%;
+    background-color: #bdd4dd;
+    border-radius: 35px;
+    width: 65%;
+    padding: 5%;
+    margin: 0% 17.5% 5% 17.5%;
+    font-size: 80%;
   }
 
   .section2 {
-      background-color: #7e938a;
-      border-radius: 35px;
-      width: 65%;
-      margin: 0% 17.5% 5% 17.5%;
-      font-size: 80%;
+    background-color: #7e938a;
+    border-radius: 35px;
+    width: 65%;
+    margin: 0% 17.5% 5% 17.5%;
+    font-size: 80%;
   }
 
   .section3 {
-      background-color: #f3cde0;
-      border-radius: 35px;
-      width: 65%;
-      margin: 0% 17.5% 5% 17.5%;
-      font-size: 80%;
+    background-color: #f3cde0;
+    border-radius: 35px;
+    width: 65%;
+    margin: 0% 17.5% 5% 17.5%;
+    font-size: 80%;
   }
 
  /*contact*/
@@ -370,14 +382,40 @@ p {
     grid-row-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "overskrift overskrift overskrift"
+    "top top top"
     "mig mail mobil"
     "mig contactsection1 contactsection2"
+    "middle middle middle"
+    "preview preview preview"
+    "button button button"
+  }
+
+  .mig {
+    grid-area: mig;
+    width: 80%;
+    border-radius: 20px;
+  }
+
+  .mobil {
+    grid-area: mobil;
+  }
+
+  .mail {
+    grid-area: mail;
+  }
+
+  .top {
+    grid-area: top;
+  }
+
+  .middle {
+    grid-area: middle;
   }
 
   .overskrift {
-    grid-area: overskrift;
     text-align: center;
+    font-size: 130%;
+    margin: 0%;
   }
 
   .contactsection1 {
@@ -395,7 +433,21 @@ p {
   }
 
   .illustrationer2 {
-    width: 10%;
+    width: 30%;
+  }
+
+  .button {
+    grid-area: button;
+  }
+
+  .preview {
+    grid-area: preview;
+  }
+
+  .eks {
+    padding: 2%;
+    width: 30%;
+    border-radius: 20px;
   }
 }
 
@@ -440,5 +492,11 @@ p {
 
   .section3 {
     font-size: 100%;
+  }
+
+/*contact*/
+  .eks {
+    padding: 2%;
+    width: 35%;
   }
 }
