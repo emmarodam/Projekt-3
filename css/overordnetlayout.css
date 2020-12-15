@@ -40,7 +40,7 @@ body {
   grid-area: logo;
   width: 40%;
   height: auto;
-  margin-left: 20px;
+  margin-left: 7.5%;
   justify-content: center;
 }
 
@@ -73,8 +73,8 @@ body {
   justify-content: space-between;
   height: auto;
   background-color: #ffffff;
-  width: auto;
-  padding: 0;
+  width: 85%;
+  margin: 0% 7.5% 2% 7.5%;
 }
 
 ul{
@@ -228,7 +228,7 @@ p {
 }
 
 /*indstillinger til de forskellige skærme*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
   .hide-on-mobile {
     display: none;
   }
