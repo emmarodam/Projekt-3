@@ -8,7 +8,7 @@ body {
 
 .wrapper > * {
 /* > betyder elementer under der hvor der står wrapper og * betyder alle elementer*/
-    font-family: "avenir next", "verdana", sans-serif;
+    font-family: "avenir next", "verdana", serif;
 }
 
 /*mobilefirst*/
@@ -154,7 +154,7 @@ a {
 }
 
 p {
-  font-family: "avenir next", "verdana", sans-serif;
+  font-family: "avenir next", "verdana", serif;
   padding: 2%;
   text-align: center;
 }
